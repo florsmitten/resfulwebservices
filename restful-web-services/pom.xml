@@ -25,14 +25,42 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		<!-- VALIDACIONES -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
-				<dependency>
+		<!-- Para moitoriar la app -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- Permite explorar el restAPI desde el browser -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-explorer</artifactId>
+		</dependency>
+		
+		<!-- HATEOAS - Hypermedia as the Engine of Application State - para agregar links en los bodies del response -->
+		<!-- Internationalization - i18n -->
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
 		</dependency>
+		
+		<!-- permite visualizar el response en formato xml / content negociation -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
+		
+		<!-- Swagger UI -->
+		<dependency>
+      		<groupId>org.springdoc</groupId>
+     		<artifactId>springdoc-openapi-ui</artifactId>
+      		<version>1.6.9</version>
+   		</dependency>	
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
